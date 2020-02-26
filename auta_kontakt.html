@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/slick-1.8.1/slick/slick-theme.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="js/slick-1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"
+      integrity="sha256-nf7u3H2uLh7tvCASjLqQ5K2sDRmvvooLxoEvZt7ti2U="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="menu-button-section">
+      <div class="menu-button">
+        <i class="material-icons menu-icon">
+          menu
+        </i>
+      </div>
+    </div>
+
+    <div class="menu-overlay" id="menu-container">
+      <div class="menu-overlay-wrapper">
+        <div class="logo-wrapper">
+          <img src="img/race-car-309123_640.png" />
+        </div>
+        <div class="menu-navlinks">
+          <a class="nav-link-item" href="auta.html"
+            ><span>Strona Głowna</span></a
+          >
+          <a class="nav-link-item"><span>Oferta</span></a>
+          <a class="nav-link-item"><span>Blog</span></a>
+          <a class="nav-link-item"><span>Kontakt</span></a>
+          <a class="nav-link-item"><span>Zamów</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-main-container">
+      <div class="background-video-wrapper">
+        <video
+          class="contact-video"
+          autoplay
+          muted
+          loop
+          id="contact-background-video"
+        >
+          <source src="video/impala.mp4" />
+        </video>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <div class="contact-form">
+          <span>Skontaktuj się z nami</span>
+          <form action="">
+            <div class="input-container">
+              <label for="fname">Imię</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Imię"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="lname">Nazwisko</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Nazwisko"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="subject">Wiadomość</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Twoja wiadomośc"
+              ></textarea>
+            </div>
+
+            <div class="button-wrapper">
+              <button id="contact-submit-button" type="button">
+                Zapytaj Nas
+              </button>
+              <div class="submit-loader" id="loader">
+                <img src="img/Rolling-1s-20px.svg" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="contact-map-wrapper"></div>
+    </div>
+
+    <div class="footer-wrapper">
+      <footer class="page-footer">
+        <div class="footer-content">
+          <span>2020 &copy; CarLot</span>
+          <div class="media-icons-wrapper">
+            <img class="media-icon" src="img/64x64 PNG/facebook.png" />
+            <img class="media-icon" src="img/64x64 PNG/googleplus.png" />
+            <img class="media-icon" src="img/64x64 PNG/youtube.png" />
+            <img class="media-icon" src="img/64x64 PNG/twitter.png" />
+          </div>
+          <span>Designed by Titan PJMM</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="js/contact-handler.js"></script>
+</html>
