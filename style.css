@@ -135,6 +135,13 @@ body {
   border-radius: 50%;
 }
 
+.slide-text-wrapper p {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Raleway";
+  color: white;
+}
+
 .slide-text-wrapper span {
   margin: 0 60px 0 60px;
   font-size: 1.5em;
@@ -193,6 +200,7 @@ body {
   font-size: 1.5em;
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-link-item:hover {
@@ -510,4 +518,463 @@ body {
   object-fit: cover;
   position: relative;
   left: -3000px;
+}
+
+.offer-main-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  min-height: 600px;
+  height: auto;
+}
+
+.offer-main-container::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid rgb(201, 48, 48);
+  border-right: 10px solid rgb(201, 48, 48);
+  border-bottom: 10px solid rgb(182, 179, 179);
+  width: 100%;
+  height: 100%;
+}
+
+.offer-main-container h2 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Source Sans Pro";
+  position: relative;
+  z-index: 2;
+}
+
+.offer-main-header {
+  margin-top: 40px;
+  position: relative;
+  width: 50%;
+  height: 200px;
+}
+
+.offer-main-header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: rgb(201, 48, 48);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 50% 0 50%;
+}
+
+.offer-page-design-container {
+  min-height: 300px;
+  border: 2px solid rgb(201, 48, 48);
+  box-shadow: 10px 10px rgb(182, 179, 179);
+  border-radius: 0 20% 0 20%;
+  width: 80%;
+  height: 40%;
+  margin-bottom: 100px;
+}
+
+.offer-page-design-container p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.page-design-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-design-wrapper span {
+  padding: 20px;
+}
+
+.page-design-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.page-design-prices table {
+  width: 60%;
+}
+
+.page-design-prices table td {
+  text-align: center;
+}
+
+.page-design-prices table td,
+.page-design-prices table th {
+  border: 2px solid rgb(201, 48, 48);
+}
+
+#page-design,
+#app-design,
+#service {
+  position: relative;
+  left: -2000px;
+}
+
+.titan-blog-header {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(201, 48, 48);
+}
+
+.titan-blog-header img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titan-blog-header span {
+  z-index: 2;
+  font-size: 2.5em;
+  font-family: "Permanent Marker";
+  color: rgb(201, 48, 48);
+}
+
+.blog-header-text {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.header-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.header-text-wrapper p {
+  font-family: Georgia;
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.blog-recent-posts-container {
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.blog-recent-posts-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/work-731198_1920.jpg"),
+    linear-gradient(#a8a8a8, #8b8b8b);
+  background-size: cover;
+}
+
+.posts-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-recent-posts {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-posts-header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.blog-posts-header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgb(201, 48, 48);
+}
+
+.blog-posts-header h2 {
+  font-size: 2em;
+  font-family: "Source Sans Pro";
+  color: white;
+}
+
+.blog-posts-header img {
+  margin-left: 20px;
+  width: 200px;
+  height: 100%;
+}
+
+.posts-header {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.blog-recent-posts-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  min-height: 500px;
+  height: auto;
+}
+
+.titan-single-post-container {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border-radius: 0 0 30% 0;
+  margin-bottom: 30px;
+  background-color: rgb(201, 48, 48);
+  color: white;
+  transition: all 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.titan-single-post-container:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.titan-single-post-container:hover .post-content a {
+  color: black;
+}
+
+.titan-single-post-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgb(201, 48, 48);
+  border-radius: 0 0 30% 0;
+  box-shadow: 10px 10px rgb(182, 179, 179);
+}
+
+.post-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.post-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+
+.post-content a {
+  z-index: 2;
+  text-decoration: none;
+  padding-top: 10px;
+  color: white;
+  transition: all 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.post-content h3 {
+  font-size: 2em;
+  font-family: "Source Sans Pro";
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.post-text {
+  width: 100%;
+  height: 100%;
+}
+
+.post-text p {
+  padding: 30px;
+  text-align: justify;
+}
+
+/*STRONA POJEDYŃCZEGO POSTA*/
+
+.single-post-container {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.single-post-wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eeeeeee3;
+}
+
+.single-post-thumbnail {
+  width: 30%;
+  height: 300px;
+  position: relative;
+}
+
+.single-post-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.single-post-thumbnail::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 5px solid rgb(201, 48, 48);
+}
+
+.single-post-content {
+  margin-top: 50px;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.single-post-content p {
+  text-align: justify !important;
+}
+
+.single-post-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.single-post-title p {
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "Permanent Marker";
+  color: rgb(201, 48, 48);
+}
+
+.single-post-comments-container {
+  width: 70%;
+  min-height: 300px;
+  height: auto;
+}
+
+.single-post-comments-container h2 {
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "Permanent Marker";
+  color: rgb(201, 48, 48);
+}
+
+.single-post-comment-wrapper {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.single-post-comment-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  border-bottom: 2px solid rgb(201, 48, 48);
+}
+
+.single-post-comment-wrapper:last-child::after {
+  border-bottom: none;
+}
+
+.user-thumbnail {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-thumbnail img {
+  width: 100%;
+  height: 200px;
+}
+
+.single-post-comment-text {
+  width: 80%;
+  height: 100%;
+  padding-left: 30px;
+  text-align: justify;
 }
